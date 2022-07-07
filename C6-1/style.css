@@ -1,0 +1,42 @@
+#result {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.card {
+  width: 200px;
+  margin: 20px;
+}
+
+.card-image {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.btn {
+/*   width = 200px; */
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 5px 10px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+}
+
+.button-text {
+  margin: 15px;
+}
+body {
+  font-family: sans-serif;
+  background-color: lightsalmon;
+}
