@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Модуль 6, задание 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section id="task">
+		<h2>Задание 3</h2>
+		<ol>
+			<li>Реализовать чат на основе эхо-сервера <a href='wss://echo-ws-service.herokuapp.com' target="_blank">wss://echo-ws-service.herokuapp.com</a>.
+Интерфейс состоит из input, куда вводится текст сообщения, и кнопки «Отправить». При клике на кнопку «Отправить» сообщение должно появляться в окне переписки. Эхо-сервер будет отвечать вам тем же сообщением, его также необходимо выводить в чат.</li>
+      <li>Добавить в чат механизм отправки геолокации.</li>
+      <li>При клике на кнопку «Геолокация» необходимо отправить данные серверу и в чат вывести ссылку на <a href="https://www.openstreetmap.org/" target="_blank">https://www.openstreetmap.org/</a> с вашей геолокацией. <b>Сообщение, которое отправит обратно эхо-сервер, не выводить.</b></li>
+		</ol>
+		<p>При возникновении проблем по ходу решения вы всегда можете обратиться к ментору в Slack.</p> 
+	</section>
+	<hr>
+	<section id="work">
+    <div id='header'><textarea id="input_field"></textarea>
+      <button class="btn" id="btnSend">
+			<div class="btn_text">Отправить</div>
+			<div class="btn_icon">
+			  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-left-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-5.904-2.854a.5.5 0 1 1 .707.708L6.707 9.95h2.768a.5.5 0 1 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.475a.5.5 0 1 1 1 0v2.768l4.096-4.097z"/>
+</svg>
+			</div>
+		</button>
+    <button class="btn" id="btnGeolocation">
+			<div class="btn_text">Геолокация</div>
+			<div class="btn_icon">
+			  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-left-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-5.904-2.854a.5.5 0 1 1 .707.708L6.707 9.95h2.768a.5.5 0 1 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.475a.5.5 0 1 1 1 0v2.768l4.096-4.097z"/>
+</svg>
+			</div>
+		</button>
+    </div>
+    <div id="output" class="message_area"></div>
+		
+		
+
+
+</body>
+</html>
+<script type="text/javascript" src="script.js"></script>
